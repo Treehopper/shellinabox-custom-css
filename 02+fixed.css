@@ -1,0 +1,10 @@
+/* smaller font means more row x col */
+#vt100 #console, #vt100 #alt_console, #vt100 #cursor, #vt100 #lineheight {
+ font-size: 9pt;
+}
+
+/* fixes problem with invisible slection with white-on-black css: e.g. in terminal programs such as abook or wyrd */
+#vt100 .bgAnsi0.ansi15 {
+ background-color: white;
+ color: black;
+}
